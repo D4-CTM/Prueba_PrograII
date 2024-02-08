@@ -7,18 +7,26 @@ import java.util.Calendar;
  *
  * @author harle
  */
-public class BlockBusterItem {
+public abstract class BlockBusterItem{
     
     int codigo;
     String nombre;
-    int PrecioRenta;
+    double PrecioRenta;
     Calendar FechaAdd  = Calendar.getInstance(); 
     
-    public BlockBusterItem(int codigo, String nombre, int PrecioRenta){
+    public BlockBusterItem(int codigo, String nombre, double PrecioRenta){
     
         this.nombre=nombre;
         this.codigo=codigo;
         this.PrecioRenta=PrecioRenta;
     }
+    
+    @Override
+    public String toString() {
+        return "Código: " + codigo + ", Nombre: " + nombre + ", Precio de renta: $" + precioRenta;
+    }
+
+    // Abstract method
+    public abstract double pagoRenta(int dias);
     
 }

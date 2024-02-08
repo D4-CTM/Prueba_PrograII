@@ -42,6 +42,11 @@ public class Main extends javax.swing.JFrame {
         btnRentar.setFont(new java.awt.Font("Segoe UI Black", 3, 12)); // NOI18N
         btnRentar.setForeground(new java.awt.Color(0, 0, 0));
         btnRentar.setText("Rentar");
+        btnRentar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRentarActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnRentar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 150, 60));
 
         btnAgregar.setBackground(new java.awt.Color(255, 255, 0));
@@ -59,12 +64,22 @@ public class Main extends javax.swing.JFrame {
         btnAuditar.setFont(new java.awt.Font("Segoe UI Black", 3, 12)); // NOI18N
         btnAuditar.setForeground(new java.awt.Color(0, 0, 0));
         btnAuditar.setText("Auditar Movie Estado");
+        btnAuditar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAuditarActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnAuditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 340, 150, 60));
 
         btnBuscar.setBackground(new java.awt.Color(255, 255, 0));
         btnBuscar.setFont(new java.awt.Font("Segoe UI Black", 3, 12)); // NOI18N
         btnBuscar.setForeground(new java.awt.Color(0, 0, 0));
         btnBuscar.setText(" Buscar Item");
+        btnBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 240, 150, 60));
 
         jLabel1.setFont(new java.awt.Font("Playbill", 2, 70)); // NOI18N
@@ -92,7 +107,21 @@ public class Main extends javax.swing.JFrame {
 
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         // TODO add your handling code here:
+        
+        
     }//GEN-LAST:event_btnAgregarActionPerformed
+
+    private void btnAuditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAuditarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAuditarActionPerformed
+
+    private void btnRentarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRentarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRentarActionPerformed
+
+    private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarActionPerformed
 
     /**
      * @param args the command line arguments

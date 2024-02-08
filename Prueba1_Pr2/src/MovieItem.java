@@ -10,7 +10,6 @@ import java.util.Date;
  * @author harle
  */
 public class MovieItem extends BlockBusterItem{
-    
     private String estado;
     
     public MovieItem(int codigo, String nombre, double PrecioRenta) {

@@ -43,21 +43,11 @@ public class MovieItem extends BlockBusterItem{
     
     
     public void evaluarEstado() {
-        Calendar fechaAdicion = super.FechaAdd;
         Calendar fechaActual = Calendar.getInstance();
-        fechaAdicion.setTime(super.FechaAdd);
-        
-        // Calcular la diferencia en meses
-        int mesesDiferencia = 0;
-        if (fechaActual.after(fechaAdicion)) {
-            mesesDiferencia = fechaActual.get(Calendar.MONTH) - fechaAdicion.get(Calendar.MONTH) +
-                              (fechaActual.get(Calendar.YEAR) - fechaAdicion.get(Calendar.YEAR)) * 12;
-        }
+        fechaActual.add(Calendar.MONTH, -5); // Restamos 5 meses a la fecha actual
 
-        // Cambiar el estado a NORMAL si han pasado 5 meses desde la adición
-        if (mesesDiferencia >= 5 && estado.equals("ESTRENO")) {
+        if (FechaAdd.before(fechaActual)) {
             estado = "NORMAL";
-            System.out.println("El estado de la película ha cambiado a NORMAL.");
         }
     }
 }
